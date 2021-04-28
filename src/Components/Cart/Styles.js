@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Wrapper = styled.div`
   display: block;
   margin: 0 5px;
@@ -28,7 +27,7 @@ export const CartCount = styled.span`
 
 export const CartSideBar = styled.div`
   z-index: 1000;
-  width: 350px;
+  width: 200px;
   background: #ffffff;
   top: 0;
   right: 0;
@@ -53,7 +52,8 @@ export const EmptyCart = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const SideBarHeader = styled.div`
@@ -71,7 +71,7 @@ export const SideBarHeader = styled.div`
     width: 100%;
     background: #000000;
   }
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const Card = styled.div`
@@ -94,13 +94,15 @@ export const CardBody = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  font-size: 24px;font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const CardTitle = styled.span`
   font-size: 14px;
   font-weight: 500;
-  font-size: 24px;font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
 `;
 
 // export const CardRemove = styled(FontAwesomeIcon)`
@@ -122,5 +124,6 @@ export const ClearButton = styled.button`
   color: #ffffff;
   cursor: pointer;
   border: none;
-  font-size: 24px;font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
 `;

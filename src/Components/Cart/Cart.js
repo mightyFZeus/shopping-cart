@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteIcon from "@material-ui/icons/Delete";
 import useOnClickOutside from "../../Hooks/useOnClickOutside";
 import {
   Wrapper,
@@ -20,7 +20,7 @@ export default function Cart({
   setToggle,
   isToggle,
   carts,
- 
+
   removeProductFromCart,
   clearCart
 }) {
@@ -37,7 +37,7 @@ export default function Cart({
       </Wrapper>
 
       <CartSideBar ref={$sideBarRef} className={isToggle ? "expand" : "shrink"}>
-        <SideBarHeader>shopping Cart</SideBarHeader>
+        <SideBarHeader>Shopping Cart</SideBarHeader>
         {carts.length === 0 ? (
           <EmptyCart>Empty Cart</EmptyCart>
         ) : (
@@ -61,10 +61,9 @@ export default function Cart({
           ))
         )}
 
-          {carts.length !== 0 && (
+        {carts.length !== 0 && (
           <ClearButton onClick={() => clearCart()}>Clear Cart</ClearButton>
         )}
-        
       </CartSideBar>
     </>
   );
