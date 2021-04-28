@@ -53,7 +53,7 @@ export const EmptyCart = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 24px;font-family: 'Raleway', sans-serif;
 `;
 
 export const SideBarHeader = styled.div`
@@ -71,6 +71,7 @@ export const SideBarHeader = styled.div`
     width: 100%;
     background: #000000;
   }
+  font-family: 'Raleway', sans-serif;
 `;
 
 export const Card = styled.div`

@@ -32,4 +32,5 @@ export const ProductList = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
+  font-family: "Raleway", sans-serif;
 `;
