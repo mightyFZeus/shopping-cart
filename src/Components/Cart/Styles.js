@@ -94,11 +94,13 @@ export const CardBody = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  font-size: 24px;font-family: 'Raleway', sans-serif;
 `;
 
 export const CardTitle = styled.span`
   font-size: 14px;
   font-weight: 500;
+  font-size: 24px;font-family: 'Raleway', sans-serif;
 `;
 
 // export const CardRemove = styled(FontAwesomeIcon)`
@@ -120,4 +122,5 @@ export const ClearButton = styled.button`
   color: #ffffff;
   cursor: pointer;
   border: none;
+  font-size: 24px;font-family: 'Raleway', sans-serif;
 `;

@@ -17,7 +17,7 @@ const addProductToCart = (state, product) => {
 
 const removeProductFromCart = (state, productID) => {
   const copy = [...state.carts];
-  const currentItemIndex = copy.findIndex((i) => i.product.id === product.id);
+  const currentItemIndex = copy.findIndex((i) => i.product.id === productID);
 
   if (currentItemIndex > 0) {
     const currentItem = { ...copy(currentItemIndex) };

@@ -50,7 +50,7 @@ export default function GlobalState(props) {
   // clear cart
   const clearCart = () => {
     dispatch({
-      type: CLEAR_ALL - FROM_CART
+      type: CLEAR_ALL_FROM_CART
     });
   };
 
