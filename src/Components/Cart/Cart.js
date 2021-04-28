@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-
+import useOnClickOutside from "../../Hooks/useOnClickOutside";
 import { Wrapper, CartCount, EmptyCart, CartSideBar } from "./Styles";
 export default function Cart({ setToggle, isToggle }) {
+  const $sideBarRef = useRef();
+  // handle the onclick outside
+  useOnClickOutside($sideBarRef, () => {
+    setToggle(false);
+  });
   return (
     <>
       <Wrapper onClick={() => setToggle(true)}>
@@ -10,7 +15,7 @@ export default function Cart({ setToggle, isToggle }) {
         <CartCount>0</CartCount>
       </Wrapper>
 
-      <CartSideBar className={isToggle ? "expand" : "shrink"}>
+      <CartSideBar ref={$sideBarRef} className={isToggle ? "expand" : "shrink"}>
         <EmptyCart>Empty Cart</EmptyCart>
       </CartSideBar>
     </>
