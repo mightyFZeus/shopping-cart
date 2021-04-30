@@ -36,7 +36,7 @@ export const CardTitle = styled.span`
 `;
 
 export const CardPrice = styled.span`
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 300;
   margin: 5px;
   background: #bee5d3;
