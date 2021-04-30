@@ -41,14 +41,14 @@ export default function Cart({
         {carts.length === 0 ? (
           <EmptyCart>Empty Cart</EmptyCart>
         ) : (
-          carts.map(({ product, quantity, productID }) => (
+          carts.map(({ product, quantity,  }) => (
             <Card key={product.id}>
               <CardImage src={product.imageURL} />
               <CardBody>
                 <CardRow>
                   <CardTitle>{product.title}</CardTitle>
                   <DeleteIcon
-                    onClick={() => removeProductFromCart(productID)}
+                    onClick={() => removeProductFromCart(product.id)}
                   />
                 </CardRow>
                 <CardRow>
